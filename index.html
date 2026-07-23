@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form--lets learn it</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <img src="download.jpeg" alt="image">
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam non commodi odio incidunt. Rem amet
-        similique voluptas repudiandae, beatae minima, porro obcaecati quas eligendi quos accusantium. Voluptas hic
-        ipsum, nisi exercitationem ea alias modi, eaque tempora amet quos nulla neque molestias nobis dolorum tempore
-        reiciendis corporis, rem ut temporibus sapiente odit incidunt totam dolores. Illum, culpa voluptatem?
-        Repellendus, quas odio blanditiis reprehenderit porro fuga eum ut cupiditate aut quidem tempore harum sit!
-        Libero sed voluptatum quasi labore natus eum mollitia, aperiam ipsum dignissimos soluta suscipit beatae
-        assumenda nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa et porro aspernatur, ex voluptates
-        quam pariatur iusto facilis, perspiciatis eius, dolor obcaecati. Aspernatur pariatur, illum hic soluta iusto aut
-        reprehenderit fugit labore et inventore delectus nulla dolores sunt perferendis, consectetur quidem eum alias
-        corrupti nam repellendus ullam dicta similique! Reiciendis soluta tempora, illo maiores repellendus deserunt!
-    </p>
+    <h1>form to apply for jee</h1>
 
-    <table>
-        <tr>
-            <th>name</th>
-            <th>class</th>
-            <th>year</th>
-            <th>roll no.</th>
-        </tr>
+    <div>
+        <form action="post">
+            <label for="username">enter your username</label>
+            <input type="text" id="username" name="username" placeholder="enter your username">
+        </form>
+    </div>
 
-        <tr>
-            <td>master mohit gangwar</td>
-            <td>b tech </td>
-            <td>2025</td>
-            <td>25 EC 29</td>
-        </tr>
+    <div>
+        <form action="post">
+            <label for="age">enter your age</label>
+            <input type="text" id="age" name="age" placeholder="enter your age">
+        </form>
+    </div>
+        
+    <div>
+        <input type="radio" id="male" value="male" name="gender"  >
+        <label for="male">male</label>
 
-        <tr>
-            <td>ram</td>
-            <td>b tech </td>
-            <td>2026</td>
-            <td>25 EC 25</td>
-        </tr>
-    </table>
+        <input type="radio" id="fe-male" value="fe-male" name="gender"  >
+        <label for="fe-male">fe-male</label>
 
+        <input type="radio" id="xyz" value="xyz" name="gender"  >
+        <label for="xyz">xyz</label>
 
+        <!-- name tag ka seen yhe hai ki bahut se radio button ko jode rakhna -->
+        <!-- ager kisi ek me input tag or for tag ko alag alag ker du to to bo select hi nahi hoga or us point ker click kerne per select ho jayega   -->
+        <!-- name sabhi me same hoga kya ki kyo ki hame ek baar me ek hi select kerna hai -->
+    </div>
 
+    <div>
+        <input type="checkbox" name="click" id="click here" name="yes">
+        <label for="click here">you real all term and condition</label>
+        <br>
+        <input type="checkbox" name="click" id="click here" name="yes">
+        <label for="click here">i am also right</label>
+        <br>
+        <input type="checkbox" name="click" id="click here" name="yes">
+        <label for="click here">never give up okkk</label>
+        
+        <!-- checkbox me name ko same rakhena per backend ko yhe pta chalta hai ki dono same type ke hai  -->
+    </div>
 
+    <div>
+        <label for="comment">enter your comment</label>
+        <br>
+        <textarea name="comment" id="comment" rows="5" cols="50">enter your text..............</textarea>
+    </div>
 
+    <div>
+        <select name="city">
+            <option value="bareilly">bareilly</option>
+            <option value="noida">noida</option>
+            <option value="delhi">delhi</option>
+        </select>
+    </div>
 
+    <div>
+        <label for="city">enter your city</label>
+        <input id="city" type="text" required placeholder="enter your city">
+    </div>
+
+    
 </body>
-
 </html>
