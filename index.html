@@ -4,96 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css selector</title>
+    <title>css boc modal</title>
     <style>
-        /* element selector */
-        div {
+        .box {
             background-color: aqua;
-            color: brown;
         }
 
-        /* class selector */
-        .red {
-            background-color: blanchedalmond;
-        }
-
-        /* id selector */
-        #green {
-            background-color: burlywood;
-            color: green;
-        }
-
-        /* child selector */
-        div>p {
-            background-color: chartreuse;
-        }
-        
-        span > p{
-            background-color: chocolate;
-        }
-        
-        /* universal selector */
         *{
-            margin: 0%;
-            padding: 0px;
-        }
-        
-        /* pseudo selector */
-        a:visited {
-            color: rgb(26, 193, 234);
+            margin: 0px;
+            height: 0px;
+
         }
 
-        a:link{
-            color: rgb(111, 215, 8);
+        .box1 {
+            color: yellow;
+            margin: 25px;
+            padding: 10px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
         }
 
-        a:active{
-            background-color: rgb(103, 3, 8);
+        .box2 {
+            color: red;
+            margin: 25px;
+            padding: 10px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
         }
-
-        a:hover{
-            background-color: bisque;
         }
-
-        p:first-child{
-            background-color: black;
-        }
-
-        
-
     </style>
 </head>
 
 <body>
-    <div>
-        I am a div.
-    </div>
 
-    <div class="red">
-        i am a second div.
-
-        <p>
-            Lorem ipsum dolor sit.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet.
-        </p>
-        <span>
-            <p>
-                Lorem ipsum dolor
-            </p>
-            <p>
-                Lorem, ipsum dolor.
-            </p>
-        </span>
-    </div>
-
-    <div id="green">
-        i am a 3rd selector
-    </div>
-
-    <a href="https://www.instagram.com">go to instagram</a>
-   
+    <div class="box box1">i am a box</div>
+    <div class="box box2">i am another box</div>
 
 
 </body>
