@@ -1,0 +1,8 @@
+how to link css in html page----------------
+------------three way-------------
+
+1. INLINE CSS ==> this is used in an html page using style attribute.
+      
+2. INTERNAL CSS ==> it mean to add style tag and place the html pages style within it.
+
+3. EXTERNAL CSS ==>
