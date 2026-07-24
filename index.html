@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>specificity in css</title>
+    <title>css display property</title>
     <style>
-        /* the specificity of this selector is 1 */
-        h1 {
-            color: rgb(255, 0, 204);
+        *{
+            margin:0;
+            padding:0;
         }
 
-        /* the specificity of this selector is 10 */
-        h1.yellow {
-            color: yellow;
+        .box{
+            color: black;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            display: inline-block;
+            padding:25px;
+            margin:5px;
+            width: 100px;
+            height:120px;
+            
+
         }
 
-        /* the specificity of this selector is 10 */
-        .cpurple {
-            color: purple;
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+            /* display: flex;
+            display:inline-flex;
+            justify-content: center; */
+            /* display: grid; */
         }
-        
-        /* the specificity of this selector is 10 */
-        .cred {
-            color: red;
-        }
-        
-        /* the specificity of this selector is 10 */
-        /* attribute selector === (data-x=a) */
-        [data-x=a] {
-            color: blue;
-            background-color: burlywood;
-        }
+
     </style>
 </head>
-
 <body>
-    <div>
-        <h1 class="yellow cred cpurple" data-x="a">
-            css-specificity
-        </h1>
-    </div>
-</body>
+    <div class="box box1">
+        i am  a box.
 
+    </div>
+    <div class="box">
+        i am a also box
+    </div>
+   
+    <span class="box">
+        i am a good
+    </span>
+
+    <span>
+        boy.
+    </span>
+   
+</body>
 </html>
