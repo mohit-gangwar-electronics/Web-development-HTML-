@@ -4,95 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>position property</title>
+    <title>css variable</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .box {
-            border: 2px solid black;
-            height: 333px;
-            width: 80vw;
-            margin: 15px;
-            padding: 15px;
+        :root{
+            --color:rgb(130, 16, 130);
+            --seccolor:rgb(253, 148, 231);
         }
 
-        .parents{
-            /* height: 750px; */
-            border: 2px solid black;
-            margin: 15px;
-            padding: 15px;
-
-            /* transform, filter or perspective property can also make an element appear as positioned */
-            /* position: absolute; */
-            /* position: relative; */
-            /* transform: translate(0); */
-            /* filter: invert(0); */
-            perspective: 0;
+        ul{
+            display: flex;
         }
 
+        ul li{
+            opacity:0.5;
+            list-style: none;
+            margin: 20px;
+            padding: 20px;
+            margin-left: 0px;
+            border: 5px solid var(--seccolor);
+            border-radius: 10px;
+    
+        } 
 
-        .box1 {
-            background-color: aqua;
-            /* z-index: 1; */
-            /* z-index: 0; */
-            /* top: 2px; */
-            /* left: 3px; */
-            /* position: sticky; */
-            height: 111px;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            top: 0px ;
+        ul li:first-child{
+            --color:orangered;
+            background-color: var(--color);
         }
 
-        .box2 {
-            background-color:azure;
-            /* position: absolute; */
-            /* top: -110px; */
-            /* left: 25px; */
-            /* bottom: 25px; */
+        ul li:nth-child(4){
+            --color:orangered;
+            background-color: var(--color);
         }
 
-        .box3 {
-            background-color:antiquewhite;
-            /* position: fixed;
-            bottom: 0px;
-            right: 140px;
-            height: 111px; */
+        .box1{
+            background-color:var(--color);
+            border: 3px solid black;
+            border-radius: 10px;
         }
 
-        .box4 {
-            background-color: rgb(157, 57, 107);
+        .box2{
+            background-color:var(--seccolor);
+            border: 2px solid var(--color);
+            margin-top: 5px;
+            padding:5px;
+            border-radius: 10px;
         }
 
+        .me{
+            background-color: var(--seccolor);
+            color: var(--color);
+            border: 2px solid var(--color);
+            margin-top: 5px;
+            padding:5px;
+            border-radius: 10px;
+            background-image: url(HULK.jpeg);
+            height: 350px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="parents">
+    <div class="box1">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>area</li>
+            <li>area</li>
+            <li>good</li
+            ><li>hello</li>
 
-        <div class="box box1">
-            
-        </div>
-
-        <div class="box box2">
-
-        </div>
-
-        <div class="box box3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam facere ea voluptates laboriosam eaque qui earum iure libero fuga nihil tempora omnis ut porro repellat alias voluptas, aliquid ratione commodi perferendis nobis. Possimus quas sit culpa ex deleniti quisquam, ipsa magni assumenda dolorum ullam commodi?
-
-        </div>
-
-
-        <div class="box box4">
-
-        </div>
+        </ul>
     </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quis rerum explicabo fugit qui vero, ea
+        alias illum nisi facere asperiores dolore quos voluptatum magnam veniam dicta consequuntur! Dolor exercitationem
+        temporibus natus et nesciunt quos sint dolorem, expedita facere ipsum voluptates, inventore consequuntur eos?
+        Quas possimus illo magni ex officiis sed, molestias natus laudantium minus aperiam.
+
+    </div>
+
+    <div class="me">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident assumenda quod maxime consectetur consequuntur ducimus amet nulla aliquid porro. Possimus iure asperiores natus minima neque debitis quo culpa accusantium aliquid incidunt laudantium ad odio rerum dicta odit repellendus accusamus rem error modi, quibusdam earum repudiandae. Pariatur sunt veritatis consequatur, voluptatem officiis rerum ipsum, earum vitae ipsa mollitia sint architecto alias id ab nulla reprehenderit adipisci in?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptatum excepturi optio ut quo, quaerat praesentium debitis, temporibus ipsa in a voluptates, dolor minima. Recusandae voluptatibus, est explicabo numquam magnam similique sunt consequatur suscipit ex, pariatur, fuga eos maxime optio reiciendis? Ducimus libero repudiandae, expedita corporis amet fuga tempora veritatis dolore minima dolor quas autem totam pariatur, cumque ipsam deserunt sapiente, ad voluptatum explicabo odit! Ipsum esse alias tempore est eius facilis veniam. Ut dolorem non iste voluptatem eveniet consequatur vel consectetur repudiandae cum aperiam, sequi labore nobis id? Nisi inventore doloribus earum non exercitationem delectus excepturi sit ea.dolor sit amet, consectetur adipisicing elit. Qui voluptatum excepturi optio ut quo, quaerat praesentium debitis, temporibus ipsa in a voluptates, dolor minima. Recusandae voluptatibus, est explicabo numquam magnam similique sunt consequatur suscipit ex, pariatur, fuga eos maxime optio reiciendis? Ducimus libero repudiandae, expedita corporis amet fuga tempora veritatis dolore minima dolor quas autem totam pariatur, cumque ipsam deserunt sapiente, ad voluptatum explicabo odit! Ipsum esse alias tempore est eius facilis veniam. Ut dolorem non iste voluptatem eveniet consequatur vel consectetur repudiandae cum aperiam, sequi labore nobis id? Nisi inventore doloribus earum non exercitationem delectus excepturi sit ea.dolor sit amet, consectetur adipisicing elit. Qui voluptatum excepturi optio ut quo, quaerat praesentium debitis, temporibus ipsa in a voluptates, dolor minima. Recusandae voluptatibus, est explicabo numquam magnam similique sunt consequatur suscipit ex, pariatur, fuga eos maxime optio reiciendis? Ducimus libero repudiandae, expedita corporis amet fuga tempora veritatis dolore minima dolor quas autem totam pariatur, cumque ipsam deserunt sapiente, ad voluptatum explicabo odit! Ipsum esse alias tempore est eius facilis veniam. Ut dolorem non iste voluptatem eveniet consequatur vel consectetur repudiandae cum aperiam, sequi labore nobis id? Nisi inventore doloribus earum non exercitationem delectus excepturi sit ea.dolor sit amet, consectetur adipisicing elit. Qui voluptatum excepturi optio ut quo, quaerat praesentium debitis, temporibus ipsa in a voluptates, dolor minima. Recusandae voluptatibus, est explicabo numquam magnam similique sunt consequatur suscipit ex, pariatur, fuga eos maxime optio reiciendis? Ducimus libero repudiandae, expedita corporis amet fuga tempora veritatis dolore minima dolor quas autem totam pariatur, cumque ipsam deserunt sapiente, ad voluptatum explicabo odit! Ipsum esse alias tempore est eius facilis veniam. Ut dolorem non iste voluptatem eveniet consequatur vel consectetur repudiandae cum aperiam, sequi labore nobis id? Nisi inventore doloribus earum non exercitationem delectus excepturi sit ea.
+    </div>
+
 
 </body>
 
