@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>styling list using css</title>
+    <title>text overflow</title>
     <style>
-        nav ul li{
-            /* list-style: devanagari; */
-            /* list-style-type:" -😘- "; */
-            background-color: yellow;
-            list-style-position:inside;
+        .box{
             border: 2px solid black;
-            /* list-style-image:url("HULK.jpeg") ; */
+            background-color: beige;
+            height: 150px;
+            width: 250px;
+
+            /* overflow: scroll; */
+            /* white-space: nowrap; */
+            /* text-overflow: ellipsis;  */
+
+
+            /* overflow: auto; */
+            /* overflow:clip; */
+            /* overflow:hidden; */
+            
+            overflow: auto;
+            /* overflow-y: scroll;
+            overflow-x: hidden; */
+            overflow: hidden scroll;
+
         }
 
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>about</li>
-            <li>contect</li>
-            <li>home</li>
-            <li>home</li>
-            <li>home</li>
-            <li>home</li>
-            
-        </ul>
-    </nav>
+    <div class="box">
+        I am a box. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque odio, omnis quaerat voluptate non est ab, corporis magnam minus deserunt quia doloribus temporibus quidem accusantium explicabo impedit laudantium tenetur adipisci expedita sequi! Explicabo quasi sit obcaecati ut consequatur animi sapiente nobis necessitatibus, ea labore perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natus quas, quidem quia neque minima. Nulla distinctio praesentium ex ipsum animi, fugiat, debitis porro dolor sequi non consectetur. Ab optio eum, sit iure iusto a accusantium soluta sequi cupiditate qui hic obcaecati, earum ex numquam!
+    </div>
     
 </body>
 </html>
