@@ -1,42 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css float and clear</title>
+    <title>css more on selectors</title>
     <style>
-        .cards{
-            border: 3px solid black;
-            display: flow-root;
+        /* .box:nth-child(1) {
+            background-color: aqua;
+        } */
 
+        .box::first-letter {
+            color: blue;
+            font-size: 45px;
+            font-style:oblique;
         }
+        
+        /* .box::first-line {
+            color: blue;
+        } */
 
-        .card{
+        /* .boxes *{
+            color: blue;
+            background-color: antiquewhite;
+            border: 2px solid black;
             margin: 5px;
             padding: 5px;
-            border: 3px solid red;
-        }
-        img{
-            float: left;
-            padding: 5px;
-        }
-        .card:nth-child(3){
-            background-color: aqua;
-            clear: left;
-            clear: both;
-        }
+        } */
+
+
+        /* p, a, .box, [data-color="primary"]{
+            margin:45px;
+            padding-top:45px;
+
+        } */
+
+
+
+
+        /* .box:nth-child(odd){
+            background-color: cadetblue;
+        } */
+        /* es me odd box ka background change ho jata hai */
+
+
+
+
+
+       /* .box:nth-last-child(1){
+        background-color: chocolate;
+       } */
+
+
+
+
+
+       /* .boxes::before{
+        content: "mohit is a good boy.";
+        color:blue;
+        background-color: bisque;
+       } */
+
+
+
+
+       /* .boxes::after{
+        content: "how are you miss.";
+        color: brown;
+        background-color: antiquewhite;
+       } */
+
+
+       /* .boxes::selection{
+        color: rgb(236, 4, 4);
+       } */
+
+       ::selection{
+        background-color: rgb(6, 6, 39);
+        color: aqua;
+       }
+
+       input::placeholder{
+        color: aqua;
+        /* background-color: blueviolet; */
+        /* padding: 0px; */
+        text-align: center;
+       }
+
 
     </style>
 </head>
+
 <body>
-    <div class="cards">
-        <img src="HULK.jpeg" alt="" width="350px">
-        <div class="card">
-            Lorem ipsum dolor  sit amet consectetur, adipisicing elit. Quod obcaecati excepturi, placeat at unde illo delectus autem aliquam enim. Consectetur necessitatibus tempore nesciunt provident repellendus sint odit tempora, nisi, iure maxime consequatur quia qui incidunt libero, iste perspiciatis officiis numquam aliquam dolorum rem sapiente quisquam cupiditate.sit amet consectetur, adipisicing elit. Quod obcaecati excepturi, placeat at unde illo delectus autem aliquam enim. Consectetur necessitatibus tempore nesciunt provident repellendus sint odit tempora, nisi, iure maxime consequatur quia qui incidunt libero, iste perspiciatis officiis numquam aliquam dolorum rem sapiente quisquam cupiditate.sit amet aliquam dolorum rem sapiente quisquam cupiditate. Odit, totam amet eveniet voluptatem explicabo tenetur dolorem cupiditate. Nobis?
+    <div  class="boxes">
+        <div data-color="primary"class="box">
+            Hey i am box.
         </div>
-        <div class="card">Lorem ipsum dolor, si corporis tempora illo quia, ut, et dolor iure ullam quasi nam  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea eos distinctio ex commodi odit rerum a illo placeat eum veritatis iure sed sapiente nostrum numquam obcaecati sint, eveniet qui doloribus sequi perferendis ipsum incidunt. Saepe, eius. Consequuntur molestiae reprehenderit quisquam quibusdam iusto, praesentium labore.cupiditate similiqecessitatibus. Obcaecati, inventoredistinctio, sint iusto necessitatibus velit aperiam atque. Consequatur deleniti ex excepturi illo quo! Quis cquasi nam  Lorem ipsum dolor sit amet consectetur adipisicing e eot amet consectetur adipisicing elit. Fugiat rem, necessitatibus voluptatem dolorum illo, ex perspiciatis optio repellat delectus, voluptas ullam quas! Doloribus facere nobis nulla autem?</div>
-        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctio, sint iusto necessitatibus velit aperiam atque. Consequatur deleniti ex excepturi illo quo! Quis corporis tempora illo quia, ut, et dolor iure ullam quasi nam  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea eos distinctio ex commodi odit rerum a illo placeat eum veritatis iure sed sapiente nostrum numquam obcaecati sint, eveniet qui doloribus sequi perferendis ipsum incidunt. Saepe, eius. Consequuntur molestiae reprehenderit quisquam quibusdam iusto, praesentium labore.cupiditate similique inventore ea suscipit velit expedita necessitatibus. Obcaecati, inventoredistinctio, sint iusto necessitatibus velit aperiam atque. Consequatur deleniti ex excepturi illo quo! Quis corporis tempora illo quia, ut, et dolor iure ullam quasi nam  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea eos distinctio ex commodi odit rerum a illo placeat eum veritatis iure sed sapiente nostrum numquam obcaecati sint, eveniet qui doloribus sequi perferendis ipsum incidunt. Saepe, eius. Consequuntur molestiae reprehenderit quisquam quibusdam iusto, praesentium labore.cupiditate similique inventore ea suscipit velit expedita necessitatibus. Obcaecati, inventore quo!</div>
+        <div class="box">
+            Hey i am box.
+        </div>
+        <div class="box">
+            Hey i am box.
+        </div>
+
+        <input type="text" placeholder="enter your name">
     </div>
-    
+
+
+
 </body>
+
 </html>
